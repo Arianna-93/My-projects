@@ -1,0 +1,713 @@
+
+/* BODY per a totes les pàgines web */
+
+body{
+    height: auto;
+    /*L'altura de la pàgian s'adapatarà, segons l'increment del seu contingut*/
+    width: 100%;	
+    /*Per ocupar tot l'ample de la pàgina*/
+    color: #494949;
+    /*Color predeterminat, per a la tipografia de totes les pàgines, en cas de no especifica-se*/
+    font-family: 'Ubuntu', sans-serif;
+    /*Establir una familia tipografica, per a totes les pàgines, en cas de no especifica-se*/
+    font-size: 1em;
+    /*Mida predeterminada, per a la tipografia de totes les pàgines, en cas de no especifica-se*/
+    margin: 0;
+    /*Aconseguir que el contingut s'adapti 100% a la pàgina web, mitjançant els marges*/
+    padding: 0;
+    /*Aconseguir que el contingut s'adapti 100% a la pàgina web, sense indicar cap espai al voltant del seu contingut*/
+    list-style-type: none;
+    /*Eliminar l'element indicador de llistes*/
+    background-color: #f5eee4;
+    /*Indicar el color de fons del contenidor*/
+}
+
+@font-face {
+    font-family: 'Ubuntu', sans-serif;
+    src: url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+    /*Amb aquesta propietat estic important una tipografia d'internet*/
+}
+
+
+/* CAPÇALERA per a totes les pàgines web */
+
+header{
+    top: 0;
+    /*Aconseguir que el contingut s'adapti totalment al marge superior de la pàgina web*/
+    margin: 0;
+    /*Aconseguir que el contingut s'adapti 100% a la pàgina web, mitjançant els marges*/
+    padding: 0;
+    /*Aconseguir que el contingut s'adapti 100% a la pàgina web, sense indicar cap espai al voltant del seu contingut*/
+    height: auto;
+    /*L'alçada del contenidor creixerà segons l'increment el seu contingut*/
+    width: 100%;
+    /*Per ocupar tot l'ample de la pàgina*/
+    background-color: #2a7e87;
+    /*Indicar el color de fons del contenidor*/
+    display: flex;
+    /*Presentar la imatge i l'enllaç, com si fossin elements en bloc, dins d'un contenidor flexible*/
+    align-items:center;
+    /*Aliniar centralment la imatge i l'enllaç*/
+    justify-content:space-around;
+    /*Separar proporcionalment el contingut*/
+}
+
+.logo a{
+    margin-left: 0;
+    /*Ajustar la imatge totalment a l'esquerre*/
+    display: flex;
+    /*Presentar la imatge i el seu títiol, com si fossin elements en bloc, dins d'un contenidor flexible*/
+    align-items: center;
+    /*Aliniar centralment la imatge i el seu títiol*/
+}
+
+
+.logo img{
+    height: 100px; 
+    /*Especificar l'alçada de la imatge*/
+    padding-right: 10px;
+    /*Crear un espai a  la part dreta de la imatge*/ 
+}
+
+.logo span{font-size: 1.4em;}
+/*Mida predeterminada, per a la tipografia del nom del lloc web*/
+
+.login{
+    float:right;
+    /*Indicar que la imatge flueixi a la dreta*/
+    display: flex;
+    /*Presentar la imatge i l'enllaç, com si fossin elements en bloc, dins d'un contenidor flexible*/
+    align-items: center;
+    /*Aliniar centralment la imatge i l'enllaç*/
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.login form{
+    display: flex;
+    /*Presentar la imatge i l'enllaç, com si fossin elements en bloc, dins d'un contenidor flexible*/
+    align-items: center;
+    /*Aliniar centralment la imatge i l'enllaç*/
+}
+
+.login a{
+    padding-left: 50px; 
+    /*Crear un espai a  la part esquerre de la imatge*/
+    text-decoration: underline;
+    font-size: 1.4em;
+    /*Mida predeterminada, per a la tipografia del nom del lloc web*/
+}
+.llista{
+    clear: both;
+
+}
+
+.llista li{
+    padding: 5px 10px;
+    /*Crear un espai vertical i horitzontalment, al voltant dels elements*/
+    list-style-type: none;
+    /*Eliminar l'element indicador de llistes*/
+    display: inline-block;
+     /*Bloquejar el enllaços linelament*/
+    border: 1px solid #e5ab57;
+    /*Crear una vora al voltant de cada enllaç*/
+    background-color: #ffffff;
+    /*Indicar el color de fons del contenidor*/
+}
+
+
+/* FOOTER per a totes les pàgines web */
+
+.footer{
+    bottom: 0;
+    /*Aconseguir que el contingut quedi centrat a la pàgina web, mitjançant els marges*/
+    width: 100%;
+    /*Per ocupar tot l'ample de la pàgina*/
+    background-color: #2a7e87;
+    /*Indicar el color de fons del contenidor*/
+}
+
+.content {
+    bottom: 0;
+    /*Aconseguir que el contingut quedi centrat a la pàgina web, mitjançant els marges*/
+    margin: 0 auto;
+    /*Aconseguir que el contingut quedi centrat en el seu contenidor, mitjançant els marges*/
+    max-width: 960px; 
+    /*Definir un ample màxim pel contenidor*/
+    padding: 20px 0;
+    /*Crear un espai verticalment, al voltant dels elements*/
+    }
+
+.content li{
+    padding: 0 10px;
+    /*Crear un espai horitzontalment, al voltant dels elements*/
+    list-style-type: none;
+    /*Eliminar l'element indicador de llistes*/
+}
+
+.primera{display: inline-block;}
+    /*Bloquejar el enllaços linelament*/
+
+.segona {
+   float:right;
+    /*Indicar que la imatge flueixi a la dreta*/
+    display: inline-block;
+    /*Bloquejar el enllaços linelament*/
+}
+
+h1, span, figcaption {font-weight:700;}
+/*Tot els elements indicats amb aquesta etiqueta aniran en negreta*/
+
+
+/*ENLLAÇOS*/
+
+a{
+    text-decoration: none;
+    /*Evitem que els enllaços es subratllin*/
+    color:#651A53;
+    /*Color predeterminat pels enllaços*/
+}
+
+a:hover {
+    color: #e5ab57;
+    /*Color establert per a la tipografia dels enllaços, quan es pasa el ratolí per sobre*/
+    text-decoration: underline;
+    /*Indiquem que els enllaços es subratllen*/
+}
+
+a:active {
+    color: #d78b97;
+    /*Color establert per a la tipografia dels l'enllaços, quan s'els activa*/
+    text-decoration: none;
+    /*Evitem que els enllaços es subratllin*/
+}
+
+
+/* COS per a totes les pàgines web */
+
+.container {
+    margin: 0;
+    /*Aconseguir que el contingut s'adapti 100% a la pàgina web, mitjançant els marges*/
+    padding: 0;
+    /*Aconseguir que el contingut s'adapti 100% a la pàgina web, sense indicar cap espai al voltant del seu contingut*/
+    width: 100%;
+    /*Reproduir l'ample total de la imatge*/
+    height: auto;
+    /*L'alçada del contenidor creixerà segons l'increment el seu contingut*/
+    background-color: #f5eee4;
+    /*Indicar el color de fons del contenidor*/
+}
+
+.article{
+    margin:0 auto;
+    /*Aconseguir que el contingut quedi centrat a la pàgina web, mitjançant els marges*/
+    max-width: 960px;
+    /*Indicar una amplada màxima del contenidor corresponent al cos*/
+    height: auto;
+    /*L'altura del contenidor s'adapatarà, segons l'increment del seu contingut*/
+    background-color:#89ccca;
+    /*Indicar el color de fons del contenidor*/
+}
+
+
+.menu{
+    margin: 0;
+    /*Aconseguir que el contingut s'adapti 100% a la pàgina web, mitjançant els marges*/
+    padding: 0;
+    /*Aconseguir que el contingut s'adapti 100% a la pàgina web, sense indicar cap espai al voltant del seu contingut*/
+    text-align: left;
+    /*Aliniar els enllaços a l'esquerre*/
+    width: 100%;
+    /*Per ocupar tot l'ample de la pàgina*/
+    background-color: #ffffff;
+    /*Indicar el color de fons del contenidor*/
+}
+
+.menu li{
+    padding: 10px 15px;
+    /*Crear un espai vertical i horitzontalment, al voltant dels elements*/
+    list-style-type: none;
+    /*Eliminar l'element indicador de llistes*/
+    display: inline-block;
+     /*Bloquejar el enllaços linelament*/
+    border-right: 1px solid #89ccca;
+    /*Crear una vora a la part dreta de cada enllaç*/
+}
+
+.fil{
+    margin: 0 auto;
+    /*Aconseguir que el contingut quedi centrat en el seu contenidor, mitjançant els marges*/
+    padding: 10px 15px;
+    /*Crear un espai vertical i horitzontalment, al voltant dels elements*/
+    text-align: left;
+    /*Aliniar els enllaços a l'esquerre*/
+}
+
+.fil li{
+    padding: 10px 5px 0px 5px ;
+    /*Indicar l'espai al voltant dels elements*/
+    list-style-type: none;
+    /*Eliminar l'element indicador de llistes*/
+    display: inline-block;
+    /*Bloquejar el elemenst linelament*/
+}
+
+.fil li:not(:last-child)::after {
+    padding-left: 15px;
+    color: #f5eee4;
+    content:">";
+}
+
+h1{
+    text-align: center;
+    /*Aliniar el títol al centre*/
+    color:#2a7e87;
+    /*Color predeterminat pel títol*/
+} 
+
+h2{
+    text-align: center;
+    /*Aliniar el títol al centre*/
+    font-size:1em;
+    /*Mida predeterminada, per a la tipografia del títol*/
+    color:#2a7e87;
+    /*Color predeterminat pel títol*/
+} 
+
+code{color: #f5eee4;}
+/*Color establert per el símbol que separa els enllaços*/
+
+
+/*Inici*/
+
+.destacada{
+    height: 500px;
+    /*Especificar l'alçada de la imatge*/
+    width: 100%;
+    /*Per ocupar tot l'ample de la pàgina*/ 
+    background-image:url(destacada.jpg)
+}
+
+.destacada h1 {
+	position: relative;
+    /*Indicar una posició respecte el seu contenidor*/
+    top:100px;
+    /*Indicar una posició respecte el marge superior*/
+    width:50%;
+    /*Especificar l'ample de la imatge*/
+    padding-left: 50px;
+    /*Crear un espai a  la part esquerre del marge de la imatge*/ 
+    text-align: left;
+    /*Aliniar el títol a l'esquerre*/
+}
+
+.destacada h1 a{
+    color:#f5eee4;
+    /*Color predeterminat pel títol*/
+    font-size:1.6em;
+    /*Mida predeterminada, per a la tipografia del títol*/
+}
+
+/*Caixes de notícies*/
+.images{
+    padding: 10px;
+    /*Crear un espai al voltant dels elements*/
+    display: flex;
+    /*Presentar el contingut, com si fossin elements en bloc, dins d'un contenidor flexible*/
+    justify-content:space-around;
+    /*Separar proporcionalment el contingut respecte el seu contenidor*/
+    list-style-type: none;
+    /*Eliminar l'element indicador de llistes*/
+}
+
+.inici{width: 250px;}
+/*Especificar l'amplada de les imatges*/
+
+.inici figure {
+    margin: 0 auto;
+     /*Aconseguir que el contingut quedi centrat en el seu contenidor, mitjançant els marges*/
+    text-align: center;
+    /*Aliniar els enllaços al centre*/
+}
+
+.inici img {
+    width: auto;
+    /*Especificar l'amplada de les imatges*/
+    height: auto;
+    /*L'altura de la imatge s'adapatarà, segons la seva amplada*/
+    padding-bottom: 10px;
+    /*Crear un espai a la part inferior dels elements*/ 
+}
+
+.inici figcaption {
+    margin: 0 auto;
+    /*Aconseguir que el contingut quedi centrat en el seu contenidor, mitjançant els marges*/
+    width: auto;
+    /*L'amplada del contenidor s'adapatarà, segons l'increment del contingut*/
+    font-size:1.25em;
+    /*Mida predeterminada, per a la tipografia del títol*/
+    text-align: center;
+    /*Aliniar els títol de les iamtges al centre*/
+    padding-bottom: 20px;
+    /*Crear un espai a la part inferior dels elements*/ 
+}
+
+.inici p{
+    margin: 0 auto;
+    /*Aconseguir que el contingut quedi centrat en el seu contenidor, mitjançant els marges*/
+    padding: 5px;
+    /*Crear un espai al voltant dels elements*/
+    height: auto;
+    /*Especificar l'alçada del paràgrafs*/
+    font-size: 0.85em;
+    /*Mida predeterminada, per a la tipografia de totes les pàgines, en cas de no especifica-se*/
+    line-height: 1.2em;
+    /*Indicar l'interlineat pel text dels paràgrafs*/
+}
+
+
+/*Coleccions*/
+
+/*Grup de imatge més text*/
+
+.imagescol{
+    padding: 0;
+    /*Aconseguir que el contingut s'adapti 100% al seu contenidor, sense indicar cap espai al voltant del seu contingut*/
+    display: flex;
+    /*Presentar el contingut dels grup, com elements en bloc, dins d'un contenidor flexible*/
+    flex-direction: column;
+    /*El grup es mostren verticalment, com una columna*/
+    align-items: center;
+    /*Aliniar els grups en el centre del seu contenidor*/
+    list-style-type: none;
+    /*Eliminar l'element indicador de llistes*/
+}
+
+.col·leccions{
+    display: flex;
+    /*Presentar el contingut d'un grup, com elements en bloc, dins d'un contenidor flexible*/
+    align-items: center;
+    /*Aliniar el grup, en el centre del seu contenidor*/
+    justify-content: space-between;
+    /*Separar proporcionalment els grups*/
+    width: 75%;
+    /*Especificar l'amplada de la imatge*/
+    height: auto;
+    /*L'altura del contenidor s'adapatarà, segons l'increment del contingut*/
+    line-height: 1.2em;
+    /*Indicar l'interlineat pel text dels paràgrafs*/
+    padding: 20px;
+    /*Crear un espai al voltant dels elements*/
+    border-bottom: 1px solid #d78b97;
+    /*Crear una vora a la part inferior de cada paràgraf*/
+}
+
+.col·leccions:last-child{ border-bottom:none;}
+/*Evitar que l'ùltim paràgraf tingui vora*/
+
+
+.col·leccions img {
+    width: 200px;
+    /*Especificar l'amplada de la imatge*/
+    padding: 0 10px;
+    /*Crear un espai horitzontalment, al voltant dels elements*/
+    height: auto;
+    /*L'altura de la imatge s'adapatarà, segons la seva amplada*/
+}
+
+.col·leccions h2 {text-align: left;}
+/*Aliniar els enllaços al centre*/
+
+.col·leccions p{
+    width: 500px;
+    /*Especificar l'amplada del paràgraf*/
+    height: auto;
+    /*L'altura dels paràgrafs, segons la seva amplada*/
+    color: #2a7e87;
+    /*Color predeterminat pel text del paràgraf*/
+}
+
+
+/*Enllaços fil d'Ariadna*/
+
+.actual a{
+    text-decoration: none;
+    /*Evitem que els enllaços es subratllin*/
+    color:#f5eee4;
+    /*Color predeterminat pels enllaços*/
+}
+
+.actual a:hover {
+    color: #e5ab57;
+    /*Color establert per a la tipografia dels enllaços, quan es pasa el ratolí per sobre*/
+    text-decoration: underline;
+    /*Indiquem que els enllaços es subratllen*/
+}
+
+.actual a:active {
+    color: #d78b97;
+    /*Color establert per a la tipografia dels l'enllaços, quan s'els activa*/
+    text-decoration: none;
+    /*Evitem que els enllaços es subratllin*/
+}
+
+
+/*fitxa_llibre*/
+
+.portada img{
+    margin-left: 0;
+    /*Ajustar la imatge totalment a l'esquerre*/
+    width: 250px;
+    /*Especificar l'amplada del paràgraf*/
+    height:auto;
+    /*L'altura de la imatge s'adapatarà, segons la seva amplada*/
+    list-style-type: none;
+    /*Eliminar l'element indicador de llistes*/
+    float: left;
+    /*Indicar que la imatge flueixi a l'esquerre*/
+    display: inline-block;
+    /*Bloquejar el elemenst linelament*/
+}
+
+.xarxes{
+    margin: 0;
+    /*Aconseguir que el contingut s'adapti 100% al seu contenidor, mitjançant els marges*/
+    padding: 20px;
+    /*Crear un espai al voltant dels elements*/
+    height: auto;
+    /*L'altura del contenidor s'adapatarà, segons l'increment del contingut*/
+    display: flex;
+    /*Presentar els elements del grup de xarxes, com si fossin elements en bloc, dins d'un contenidor flexible*/
+    flex-direction: column;
+    /*Els elements es mostren verticalment, com una columna*/
+    align-items: center;
+    /*Aliniar els elements del cotenidor, en el seu centre*/
+}
+.sprite li{display: inline-block;}
+    /*Presentar el contingut, com si fossin elements en bloc, dins d'un contenidor flexible*/
+
+.sprite a{
+    margin: 0 auto;
+    /*Aconseguir centrar el contenidor dins del seu contenidor*/
+    padding: 0;
+    /*Aconseguir que el contingut s'adapti 100% al seu contenidor, sense indicar cap espai al voltant del seu contingut*/
+    width: 50px;
+    /*Especificar l'amplada de la imatge*/
+    height: 50px;
+    /*Especificar l'alçada de la imatge*/
+    background: url("sprite_icons.png")no-repeat;
+    /*Aplicar una imatge com  fons*/
+    display: inline-block;
+    /*Presentar el contingut, com si fossin elements en bloc, dins d'un contenidor flexible*/
+}
+    
+.sprite1 a{background-position:  0px -50px;}
+/*Indiquem el tros de la imatge a visualitzar*/
+.sprite2 a{background-position: -50px -50px;}
+/*Indiquem el tros de la imatge a visualitzar*/
+.sprite3 a{background-position: -100px -50px;}
+/*Indiquem el tros de la imatge a visualitzar*/
+.sprite4 a{background-position: -150px -50px;}
+/*Indiquem el tros de la imatge a visualitzar*/
+
+.sprite1 a:hover{background-position:  0px 0px;}
+/*Indiquem el tros de la imatge a visualitzar*/
+.sprite2 a:hover{background-position: -50px 0px;}
+/*Indiquem el tros de la imatge a visualitzar*/
+.sprite3 a:hover {background-position: -100px 0px;}
+/*Indiquem el tros de la imatge a visualitzar*/
+.sprite4 a:hover {background-position: -150px 0px;}
+/*Indiquem el tros de la imatge a visualitzar*/
+
+.form{ 
+    margin: 0 auto;
+    /*Aconseguir que el contingut quedi centrat en el seu contenidor, mitjançant els marges*/
+    padding: 0;
+    /*Aconseguir que el contingut s'adapti 100% al seu contenidor, sense indicar cap espai al voltant del seu contingut*/
+    width: 900px;
+    /*Especificar l'amplada de la imatge*/
+}
+
+fieldset{
+	background-color: #f5eee4;
+    /*Indicar el color de fons del formulari*/
+	border: 1px solid #e5ab57;
+    /*Estilitzar vora al voltant del formulari*/
+}
+
+.formulari{
+    display: flex;
+    /*Presentar el contingut del formulari, com elements en bloc, dins d'un contenidor flexible*/
+    align-items: center;
+    /*Aliniar el contingut en el centre del seu contenidor*/
+    justify-content:space-around;
+    /*Separar proporcionalment el contingut respecte el seu contenidor*/
+}
+
+.formulari input, select, textarea{
+    border: 1px solid red;
+    /*Crear una vora a les àrees de text del formulari*/
+    color:#e5ab57;
+    /*Color predeterminat pel text del formulari*/
+    padding: 2px 4px;
+    /*Crear un espai vertical i horitzontal al voltant dels elements*/
+    background-color: #ffffff;
+    /*Indicar el color de fons, pel contenidor de cadascuna d'aquestes classes*/
+    border-radius: 5px;
+    /*Arrodonir els cantons de les àrees de text del formulari */
+}
+
+ input:focus {background-color: #2a7e87}
+/*Indicar el color de fons de tots els elements input type="text", alhora de clicar a sobre d'ells*/
+
+::placeholder {
+  color: #e5ab57;
+    /*Color establert per a la descripció del valor esperat a omplir, en una àrea de text*/
+}
+
+.form .general{ 
+    margin: 0px;
+    /*Aconseguir que el contingut s'adapti 100% al seu contenidor, mitjançant els marges*/
+    height: auto;
+    /*L'altura del contenidor s'adapatarà, segons l'increment del contingut*/
+    padding: 0px;
+    /*Aconseguir que el contingut s'adapti 100% a al contenidor, sense indicar cap espai al voltant del contingut*/
+    color:#2a7e87;
+    /*Color establert per a la tipografia dels elements que es troben dins del contenidor*/
+    line-height: 2em;
+    /*Indicar l'interlineat pel text del formulari*/
+    list-style-type: none;
+    /*Eliminar l'element indicador de llistes*/
+    padding-right: 20px;
+    /*Crear un espai a la part dreta del formulari*/
+}
+
+.dades label{ float: left; }
+/*Indicar que els elements label, flueixin a l'esquerre*/
+
+.dades input{ 
+    display: flex;
+     /*Presentar els elements input, com si fossin elements en bloc, dins d'un contenidor flexible*/
+    clear: both; 
+    /*Evitar que cap element floti al voltant de la navegació*/
+    width: 300px;
+    /*Especificar l'amplada dels elements*/
+}
+
+.pregunta, .recollida, .decisio, .escollir{
+    display: flex;
+    /*Presentar el contingut, com si fossin elements en bloc, dins d'un contenidor flexible*/
+    align-items: center;
+    /*Aliniar el contingut, en el centre del seu contenidor*/
+    justify-content:space-around;
+    /*Separar proporcionalment el contingut respecte el seu contenidor*/
+    list-style-type: none;
+    /*Eliminar l'element indicador de llistes*/
+}
+
+.decisio li{
+    display: flex;
+    /*Presentar els elements, com si fossin elements en bloc, dins d'un contenidor flexible*/
+    align-items: center;
+    /*Aliniar els elements, en el centre del seu contenidor*/
+}
+.decisio label{ padding-left: 10px;}
+    /*Crear un espai a la part esquerre de l'element label*/
+   
+.recollida select{ width: 125px;}
+/*Especificar l'amplada dels elements select*/
+
+.recollida option{ text-align: center;}
+ /*Aliniar els enllaços al centre*/
+
+.escollir{ padding-top: 20px;}
+/*Crear un espai a la part superior del contenidor*/
+
+
+/*informació de la Biblioteca*/
+
+.info{
+    margin: 0 auto;
+    /*Aconseguir que el contingut quedi centrat en el seu contenidor, mitjançant els marges*/
+    padding-bottom: 20px;
+    /*Crear un espai a la part inferior del contenidor*/
+    height: auto;
+    /*L'altura del contenidor s'adapatarà, segons l'increment del contingut*/
+    display: flex;
+    /*Presentar el contingut, com si fossin elements en bloc, dins d'un contenidor flexible*/
+    justify-content:space-around; 
+    /*Separar proporcionalment el contingut respecte el seu contenidor*/
+    align-items:center;
+    /*Aliniar els elements, en el centre del seu contenidor*/
+    list-style-type: none;
+    /*Eliminar l'element indicador de llistes*/
+}
+
+.esquerre, .dreta{
+    margin-left: 0;
+    /*Ajustar la imatge totalment a la dreta*/
+    width: 450px; 
+    /*Especificar l'amplada dels elements input*/
+    height: auto;
+    /*L'altura del contenidor s'adapatarà, segons l'increment del seu contingut*/
+}
+
+
+table{
+    width: 100%;
+    /*Ocupar tot l'ample del cos*/   
+    color: #494949;
+    /*Color establert per a la tipografia de la taula*/
+    background-color:#FFFFFF;
+    /*Indicar el color de fons de la taula*/
+    border-collapse: collapse;
+   /*Indicar un estil de vora per a la taula*/
+}
+
+caption {
+    color: #ffffff;
+    /*Color establert pel títol de la taula*/
+    background-color: #2a7e87;
+    /*Indicar el color de fons pel títol de la taula*/
+    padding: 6px 0px;
+    /*Crear un espai verticalment, al voltant dels elements*/
+}
+
+.th{ 
+    color: #ffffff;
+    /*Color establert pels elements th de la taula*/
+    background-color: #2a7e87;
+    /*Indicar el color de fons pels elements th de la taula*/
+}
+
+
+th, td {
+    width: auto;
+    /*L'ample del contenidor s'adapatarà, segons l'increment del contingut*/
+    border: 1px solid #89ccca;
+    /*Crear una vora als marges dels elements th i td*/
+}
+   
+th{
+    text-align: center;
+    /*Centra el text dins d'aquestes cel·les*/
+    padding: 5px;
+    /*Crear un espai al voltant dels elements*/
+    background-color: #f5eee4;
+    /*Indicar el color de fons pels elements th de la taula*/
+}
+.titol, .none{color: #f5eee4;
+    /*Color establert pels elements th de la taula*/
+    background-color: #651A53;
+     /*Indicar el color de fons pels elements th de la taula*/
+}
+
+td{
+    text-align: center;
+    /*Aliniar els enllaços al centre*/
+    padding-right: 10px;
+    /*Crear un espai al voltant dret dels elements*/
+    background-color: #ffffff;
+   /*Indicar el color de fons pels elements td de la taula*/
+}
+ 
